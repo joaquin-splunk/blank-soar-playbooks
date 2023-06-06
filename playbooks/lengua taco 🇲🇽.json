@@ -19,9 +19,23 @@
                     "sourcePort": "2_out",
                     "targetNode": "1",
                     "targetPort": "1_in"
+                },
+                {
+                    "id": "port_2_to_port_3",
+                    "sourceNode": "2",
+                    "sourcePort": "2_out",
+                    "targetNode": "3",
+                    "targetPort": "3_in"
+                },
+                {
+                    "id": "port_3_to_port_1",
+                    "sourceNode": "3",
+                    "sourcePort": "3_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
                 }
             ],
-            "hash": "b6620e6c2563521baadb2db76b6f3ff9cb0a4a15",
+            "hash": "aa27636d89ba28ad157da22b7616f48f4f82656d",
             "nodes": {
                 "0": {
                     "data": {
@@ -37,7 +51,7 @@
                     "type": "start",
                     "warnings": {},
                     "x": 1000,
-                    "y": 419.9999999999999
+                    "y": 419.9999999999998
                 },
                 "1": {
                     "data": {
@@ -88,6 +102,40 @@
                     "warnings": {},
                     "x": 990,
                     "y": 504.5
+                },
+                "3": {
+                    "data": {
+                        "action": "whois domain",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "join": []
+                        },
+                        "connector": "WHOIS",
+                        "connectorConfigs": [
+                            "whois"
+                        ],
+                        "connectorId": "e6723c2e-06ef-415a-8098-62c46c1cb71f",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "whois_domain_1",
+                        "id": "3",
+                        "parameters": {
+                            "domain": "splunk.com"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "domain"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "3",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 700,
+                    "y": 740
                 }
             },
             "notes": ""
@@ -99,7 +147,7 @@
         "schema": "5.0.10",
         "version": "6.1.0.112"
     },
-    "create_time": "2023-06-06T21:47:34.343522+00:00",
+    "create_time": "2023-06-06T21:54:36.625945+00:00",
     "draft_mode": false,
     "labels": [
         "events"
