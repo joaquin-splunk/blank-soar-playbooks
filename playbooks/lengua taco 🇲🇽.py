@@ -14,6 +14,8 @@ def on_start(container):
 
     # call 'geolocate_ip_1' block
     geolocate_ip_1(container=container)
+    # call 'joaquin_first_cf_1' block
+    joaquin_first_cf_1(container=container)
 
     return
 
@@ -67,6 +69,27 @@ def whois_domain_1(action=None, success=None, container=None, results=None, hand
     ################################################################################
 
     phantom.act("whois domain", parameters=parameters, name="whois_domain_1", assets=["whois"])
+
+    return
+
+
+@phantom.playbook_block()
+def joaquin_first_cf_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):
+    phantom.debug("joaquin_first_cf_1() called")
+
+    parameters = [{}]
+
+    ################################################################################
+    ## Custom Code Start
+    ################################################################################
+
+    # Write your custom code here...
+
+    ################################################################################
+    ## Custom Code End
+    ################################################################################
+
+    phantom.custom_function(custom_function="joaquin-pbs-root-dir/joaquin_first_cf", parameters=parameters, name="joaquin_first_cf_1")
 
     return
 

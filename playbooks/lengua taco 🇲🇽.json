@@ -33,9 +33,23 @@
                     "sourcePort": "3_out",
                     "targetNode": "1",
                     "targetPort": "1_in"
+                },
+                {
+                    "id": "port_0_to_port_4",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "4",
+                    "targetPort": "4_in"
+                },
+                {
+                    "id": "port_4_to_port_1",
+                    "sourceNode": "4",
+                    "sourcePort": "4_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
                 }
             ],
-            "hash": "aa27636d89ba28ad157da22b7616f48f4f82656d",
+            "hash": "fab98540c9f22d8ad287df4d35b3d5ec98d5121b",
             "nodes": {
                 "0": {
                     "data": {
@@ -51,7 +65,7 @@
                     "type": "start",
                     "warnings": {},
                     "x": 1000,
-                    "y": 419.9999999999998
+                    "y": 419.99999999999966
                 },
                 "1": {
                     "data": {
@@ -136,6 +150,41 @@
                     "warnings": {},
                     "x": 700,
                     "y": 740
+                },
+                "4": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "joaquin_first_cf",
+                            "repoName": "joaquin-pbs-root-dir"
+                        },
+                        "functionId": 1,
+                        "functionName": "joaquin_first_cf_1",
+                        "id": "4",
+                        "selectMore": false,
+                        "type": "utility",
+                        "utilities": {
+                            "joaquin_first_cf": {
+                                "description": "",
+                                "fields": [],
+                                "label": "joaquin_first_cf",
+                                "name": "joaquin_first_cf"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "joaquin_first_cf": {}
+                        }
+                    },
+                    "errors": {},
+                    "id": "4",
+                    "type": "utility",
+                    "warnings": {},
+                    "x": 780,
+                    "y": 640
                 }
             },
             "notes": ""
@@ -147,7 +196,7 @@
         "schema": "5.0.10",
         "version": "6.1.0.112"
     },
-    "create_time": "2023-06-06T21:54:36.625945+00:00",
+    "create_time": "2023-06-06T22:13:32.844710+00:00",
     "draft_mode": false,
     "labels": [
         "events"
